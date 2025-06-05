@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border-color: blue;
+    border-width: 2px;
+}
+
+/* header navigation */
+#header_nav {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 2rem; 
+    
+    
+}
+
+.nav-link {
+  text-decoration: none;   /* entfernt Unterstreichung */
+  font-weight: bold;       /* Hervorhebung */
+  transition: color 0.2s ease;
+  color: blue; 
+  margin: 0 0.5rem;         /* Standardfarbe der Links */
+}
+
+.nav-link:hover {
+  color: aliceblue;          /* Farbe beim Hover */
+  text-decoration: none;
+  cursor: default;   /* bleibt unterstreichungsfrei */
+}
+
+
+
+/*about me section */
+
+h2{ 
+  color: blue;                  /* Überschrift in Blau */
+  text-align: center;             /* zentriert den Text */
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+#about_container {
+  display: flex;
+  justify-content: center;  /* zentriert den Inhalt horizontal */
+  align-items: center;      /* vertikal zentriert */               
+  padding: 2rem;
+  box-sizing: border-box;  /* Box-Sizing für Padding */
+  font-size: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color:aliceblue;
+
+}
+
+#profil_img_container {
+  display: flex;
+  align-items: center; 
+  justify-content: center;        /* Bild & Text vertikal zentriert */
+  gap: 1rem;                   /* Abstand zwischen Bild und Text */
+  flex-wrap: nowrap;
+  max-width: 800px;
+  flex: 1;
+}
+
+#profil_img {
+    max-width: 150px; /* Maximale Breite des Bildes */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10%;  
+    
+}
+
+#profil_text_container {
+  flex: 2; /* Text nimmt den restlichen Platz ein */
+  padding: 1rem;
+  box-sizing: border-box; /* Box-Sizing für Padding */
+}
+
+#skills {
+    
+}
+
+
+
+
+/* Responsive Design */
+
+ @media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    text-align: center;
+  }
+ }
